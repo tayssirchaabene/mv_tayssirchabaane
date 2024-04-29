@@ -31,4 +31,3 @@ class MixController extends AbstractController
     }
 }
 
-
