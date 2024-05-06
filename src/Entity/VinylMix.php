@@ -77,7 +77,14 @@ class VinylMix
         return $this;
     }
 
-    
+    public function upVote(): void
+    {
+        $this->votes++;
+    }
+    public function downVote(): void
+    {
+        $this->votes--;
+    }
 
     public function getDescription(): ?string
     {
