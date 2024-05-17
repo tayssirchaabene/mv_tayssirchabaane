@@ -33,7 +33,9 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" style="margin-top: 20px;" href="{{ path('app_browse') }}">Browse Mixes</a>
+                            
                         </li>
+                         <li> <a class="nav-link" style="margin-top: 20px;" href="{{ path('contact_form') }}">Contact</a></li>
                         <!-- Not Authenticated -->
                             <!-- <li class="nav-item"><button href="#" class="btn btn-primary btn-sm">Login</button></li> -->
                         <!-- End Not Authenticated -->
@@ -58,8 +60,8 @@
                 <div class="alert alert-success">
                     {{ message }}
                 </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
+        
         {% block body %}{% endblock %}
 
         <!-- Footer -->
@@ -79,6 +81,7 @@
             </footer>
         </div>
         <!-- End Footer -->
+        
 
     </body>
 </html>
